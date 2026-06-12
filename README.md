@@ -1,2 +1,3 @@
 # chatdemo
-OAM-driven via app.submit (chatdemo)
+
+CLAUDE.md-compliant microservice application container.
