@@ -29,3 +29,4 @@ This microservice follows the Onion Architecture pattern:
 ## Deployment
 
 This service is automatically deployed via the AppContainer CI/CD pipeline when changes are pushed to the main branch.
+
