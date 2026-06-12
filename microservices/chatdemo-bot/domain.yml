@@ -1,0 +1,25 @@
+version: "3.1"
+
+# chatdemo-bot Support Bot — minimal working domain (RASA-CONTAINER #178).
+# This file is the dev-agent edit surface: extend intents/responses/actions
+# here; the rasa runtime itself lives in the rasa-base image.
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - health_check
+
+responses:
+  utter_greet:
+    - text: "Hello from chatdemo-bot Support Bot! How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Talk to you soon."
+  utter_iamabot:
+    - text: "I am chatdemo-bot Support Bot, powered by Rasa."
+
+actions:
+  - action_health_check
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

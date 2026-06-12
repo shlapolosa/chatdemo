@@ -1,0 +1,19 @@
+version: "3.1"
+
+rules:
+  - rule: Say hello whenever the user greets
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: Say goodbye whenever the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - rule: Answer the bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - rule: Run the health check action
+    steps:
+      - intent: health_check
+      - action: action_health_check

@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - hey there
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - have a nice day
+      - cya
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - who are you?
+  - intent: health_check
+    examples: |
+      - are you up?
+      - health check
+      - status
+      - is the service running?
+      - ping
